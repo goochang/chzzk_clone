@@ -10,15 +10,16 @@ import { BiSolidUserCircle } from "react-icons/bi";
 
 // Props 타입 정의
 interface MainHeaderProps {
+  toggleClick(): void;
 }
 
 // 함수형 컴포넌트 정의
-const MainHeader: React.FC<MainHeaderProps> = ({ }) => {
+const MainHeader: React.FC<MainHeaderProps> = ({toggleClick}) => {
 
   return (
     <div className='main_header'>
       <div className='main_header_menu'>
-        <button className='hb_btn'>
+        <button className='hb_btn' onClick={() => toggleClick()} >
           <RxHamburgerMenu size={20} />
         </button>
         <span>치지직</span>
