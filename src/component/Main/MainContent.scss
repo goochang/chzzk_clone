@@ -1,3 +1,22 @@
+.main_side_menu.off+.main_content{
+    width: calc(100vw - 260px);
+}
 .main_content {
-    width: calc(100vw - 78px);
+    width: calc(100vw - 98px);
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+
+    .video_content {
+        width: calc(25% - 5px);
+        
+        .thumbnail {
+            border-radius: 25px;
+            overflow: hidden;
+            img {
+                width: 100%;
+            }
+        }
+    }
 }

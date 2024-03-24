@@ -1,8 +1,7 @@
-import React, { ChangeEvent, useState } from 'react';
+import React, { ChangeEvent, useEffect, useState } from 'react';
 import './MainContainer.scss';
 import MainContent from './MainContent';
 import MainSideMenu from '../Side/MainSideMenu';
-
 
 // Props 타입 정의
 interface MainContainerProps {
