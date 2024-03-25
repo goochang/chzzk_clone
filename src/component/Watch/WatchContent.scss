@@ -1,0 +1,19 @@
+.side_menu.off+.watch_content{
+    width: calc(100vw - 260px);
+}
+.watch_content {
+    width: calc(100vw - 98px);
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    z-index: 9;
+    justify-content: center;
+    > div {
+        width: 90%;
+        padding: 20px 50px;
+        iframe {
+            width: 100%;
+        }
+    }
+}

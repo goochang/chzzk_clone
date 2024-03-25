@@ -1,7 +1,7 @@
 import React, { ChangeEvent, useEffect, useState } from 'react';
 import './MainContainer.scss';
 import MainContent from './MainContent';
-import MainSideMenu from '../Side/MainSideMenu';
+import SideMenu from '../Side/SideMenu';
 
 // Props 타입 정의
 interface MainContainerProps {
@@ -13,9 +13,9 @@ const MainContainer: React.FC<MainContainerProps> = ({ menuToggle }) => {
 
   return (
     <div className='main_container'>
-      <MainSideMenu
+      <SideMenu
       menuToggle={menuToggle}
-      ></MainSideMenu>
+      ></SideMenu>
       <MainContent></MainContent>
     </div>
   );

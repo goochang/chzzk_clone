@@ -1,4 +1,4 @@
-.main_side_menu.off+.main_content{
+.side_menu.off+.main_content{
     width: calc(100vw - 260px);
 }
 .main_content {
@@ -6,17 +6,29 @@
     min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
-
+    gap: 10px;
+    z-index: 9;
     .video_content {
-        width: calc(25% - 5px);
-        
+        width: calc(25% - 10px);
+        padding-bottom: 50px;
         .thumbnail {
             border-radius: 25px;
             overflow: hidden;
             img {
                 width: 100%;
             }
+        }
+    }
+    .video_info {
+        display: flex;
+        flex-direction: column;
+        padding: 2px;
+        .title {
+            font-weight: bold;
+            padding-bottom: 5px;
+        }
+        .channelTitle {
+
         }
     }
 }

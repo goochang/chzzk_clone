@@ -1,7 +1,7 @@
-.main_side_menu::-webkit-scrollbar {
+.side_menu::-webkit-scrollbar {
   display: none; /* 스크롤바 숨김 */
 }
-.main_side_menu {
+.side_menu {
   display: flex;
   flex-direction: column;
   width: 240px;
@@ -52,7 +52,7 @@
   }
 }
 
-.main_side_menu.on {
+.side_menu.on {
   width: 78px;
   padding: 5px 5px;
   text-align: center;

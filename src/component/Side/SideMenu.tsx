@@ -1,5 +1,5 @@
 import React, { ChangeEvent, useState } from 'react';
-import './MainSideMenu.scss';
+import './SideMenu.scss';
 import { MdOutlineVideoCameraBack, MdReplay } from "react-icons/md";
 import { BiCategory } from "react-icons/bi";
 import SideVideoInfo from './SideVideoInfo';
@@ -11,15 +11,15 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 
 // Props 타입 정의
-interface MainSideMenuProps {
+interface SideMenuProps {
   menuToggle: boolean;
 }
 
 // 함수형 컴포넌트 정의
-const MainSideMenu: React.FC<MainSideMenuProps> = ({ menuToggle }) => {
+const SideMenu: React.FC<SideMenuProps> = ({ menuToggle }) => {
 
   return (
-    <div className={`main_side_menu ${menuToggle ? "on" : "off"}`}>
+    <div className={`side_menu ${menuToggle ? "on" : "off"}`}>
       <div>
         <div className=''>
           <SideVideoInfo title={"전체 라이브"}>
@@ -91,4 +91,4 @@ const MainSideMenu: React.FC<MainSideMenuProps> = ({ menuToggle }) => {
   );
 };
 
-export default MainSideMenu;
+export default SideMenu;
